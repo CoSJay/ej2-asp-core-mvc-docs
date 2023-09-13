@@ -1,6 +1,6 @@
 @Html.EJS().Grid("WebApi").DataSource(dataManger =>
 {
-     dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+     dataManager.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("WebApiAdaptor");
 }).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
